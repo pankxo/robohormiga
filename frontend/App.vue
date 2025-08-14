@@ -112,7 +112,9 @@ export default {
 
       try {
         // Try to fetch news.json from the scraper directory
-        const response = await fetch('../scraper/news.json')
+        // Fetch news.json from a configurable URL (environment variable or default)
+        const newsUrl = process.env.VUE_APP_NEWS_URL || '/news.json'
+        const response = await fetch(newsUrl)
         
         if (!response.ok) {
           throw new Error(`Failed to fetch news data (${response.status})`)
