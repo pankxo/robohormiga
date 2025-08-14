@@ -1,0 +1,37 @@
+{
+  "last_updated": "2025-08-14T06:40:38.060393",
+  "total_articles": 5,
+  "source": "BBC News",
+  "articles": [
+    {
+      "title": "Global Climate Summit Reaches Historic Agreement on Carbon Emissions",
+      "url": "https://www.bbc.com/news/sample-1",
+      "source": "BBC News (Sample)",
+      "scraped_at": "2025-08-14T06:40:38.060357"
+    },
+    {
+      "title": "Tech Giants Announce Major Investment in Renewable Energy",
+      "url": "https://www.bbc.com/news/sample-2",
+      "source": "BBC News (Sample)",
+      "scraped_at": "2025-08-14T06:40:38.060363"
+    },
+    {
+      "title": "Scientists Discover Breakthrough in Cancer Treatment Research",
+      "url": "https://www.bbc.com/news/sample-3",
+      "source": "BBC News (Sample)",
+      "scraped_at": "2025-08-14T06:40:38.060364"
+    },
+    {
+      "title": "New Archaeological Discovery Sheds Light on Ancient Civilizations",
+      "url": "https://www.bbc.com/news/sample-4",
+      "source": "BBC News (Sample)",
+      "scraped_at": "2025-08-14T06:40:38.060387"
+    },
+    {
+      "title": "International Space Station Welcomes New Research Mission",
+      "url": "https://www.bbc.com/news/sample-5",
+      "source": "BBC News (Sample)",
+      "scraped_at": "2025-08-14T06:40:38.060390"
+    }
+  ]
+}
