@@ -1,5 +1,10 @@
 name: Build and Deploy Preview to Netlify
 
+# This workflow builds the frontend and deploys it as a preview to Netlify
+# Triggers: Pull requests with frontend changes, and manual workflow dispatch
+# Site ID: 234d39c1-554b-4590-80e5-099cfcb6ddae
+# Requires: NETLIFY_AUTH_TOKEN secret
+
 on:
   pull_request:
     paths:
@@ -30,6 +35,6 @@ jobs:
       - name: Deploy Preview to Netlify
         uses: netlify/actions/cli@v4
         with:
-          args: deploy --dir=dist --site 234d39c1-554b-4590-80e5-099cfcb6ddae
+          args: deploy --dir=dist --site 234d39c1-554b-4590-80e5-099cfcb6ddae --json
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
