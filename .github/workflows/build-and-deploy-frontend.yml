@@ -1,16 +1,13 @@
-name: Build and Deploy Frontend to Netlify
+name: Build and Deploy Preview to Netlify
 
 on:
-  push:
-    paths:
-      - 'frontend/**'
   pull_request:
     paths:
       - 'frontend/**'
   workflow_dispatch:
 
 jobs:
-  build-and-deploy:
+  build-and-preview:
     runs-on: ubuntu-latest
     defaults:
       run:
@@ -30,10 +27,9 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Deploy to Netlify
+      - name: Deploy Preview to Netlify
         uses: netlify/actions/cli@v4
         with:
-          args: deploy --dir=dist --prod
+          args: deploy --dir=dist --site 234d39c1-554b-4590-80e5-099cfcb6ddae
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
